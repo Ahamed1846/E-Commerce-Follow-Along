@@ -1,6 +1,6 @@
 # E-Commerce-Follow-Along
 
-### Milestone 1: Project Overview
+## Milestone 1: Project Overview
 
 ### Welcome to the Follow Along Project: Milestone 1!
 
@@ -81,13 +81,7 @@ Authorization in the backend can be implemented using **middleware** to check if
 
 ---
 
-Let’s get started with building your e-commerce platform! 🚀
-
-It looks like you're summarizing a **project milestone report** for your **e-commerce project**. Here's a polished version with a professional tone and improved formatting:
-
----
-
-### **Milestone 2: Project Setup and Login Page**
+## **Milestone 2: Project Setup and Login Page**
 
 In this milestone, we focused on establishing the foundational front-end setup and implementing the login page for the application. Below are the key achievements:
 
@@ -134,7 +128,6 @@ In this milestone, we focused on establishing the foundational front-end setup a
 - Initialized version control and added new files to the repository.
 - Committed the progress to the project's **GitHub repository**, ensuring proper tracking of changes.
 
----
 
 ### **Outcome**
 This milestone establishes a solid foundation for the front-end interface and interaction logic. The login page serves as a key component, enabling user authentication in future development phases.
