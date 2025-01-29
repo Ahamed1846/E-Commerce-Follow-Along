@@ -133,3 +133,45 @@ In this milestone, we focused on establishing the foundational front-end setup a
 This milestone establishes a solid foundation for the front-end interface and interaction logic. The login page serves as a key component, enabling user authentication in future development phases.
 
 ---
+Here’s an updated and more polished version of your Milestone 4 summary:
+
+---
+
+## **Milestone 4: Creating User Model and Controller**
+
+In this milestone, the focus was on implementing the **User model** and **controller** to manage user data and related operations in the backend. The following key achievements were made:
+
+### **1. User Model Creation**
+- Created a **User schema** using Mongoose to define the structure for storing user information in the **MongoDB** database.
+- Key fields include:
+  - **name**: User’s full name.
+  - **email**: User's unique email address (with validation and uniqueness constraint).
+  - **password**: User’s password (hashed and securely stored using **bcrypt**).
+  - **timestamps**: Automatically generated created and updated timestamps for the user record.
+  
+### **2. Password Hashing**
+- Implemented **password hashing** using **bcrypt** to ensure secure storage of user passwords. This prevents storing passwords in plaintext.
+
+### **3. User Controller Development**
+- Developed the **User controller** to handle user-related operations such as **registration** and **login**.
+- Key methods implemented:
+  - **createUser()**: Handles user registration by accepting data (name, email, password), validating it, hashing the password, and saving the user to the database.
+  - **loginUser()**: Authenticates the user based on their email and password.
+
+### **4. API Endpoints**
+- Set up the following **API routes** to handle user operations:
+  - **POST /api/users/register**: Endpoint for user registration.
+  - **POST /api/users/login**: Endpoint for user login/authentication.
+
+### **5. Error Handling**
+- Implemented error handling for common issues:
+  - Duplicate email addresses during registration.
+  - Invalid credentials during login attempts.
+  - General validation errors for missing or malformed input.
+  
+---
+
+### **Outcome**
+This milestone establishes a secure and robust backend infrastructure for managing user data, authentication, and registration. It sets the foundation for implementing features like user authorization and role management, and prepares the project for future expansion.
+
+---
