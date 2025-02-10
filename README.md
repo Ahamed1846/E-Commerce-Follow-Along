@@ -211,3 +211,20 @@ In this milestone, the goal was to implement a signup page that allows users to 
    - **Modular Structure**: The signup component was split into smaller, manageable sections for better readability and easier updates.
 
 ---
+
+**Milestone 6: Secure Backend Endpoint for User Signup**  
+
+### Objective  
+Create a secure backend endpoint for user signup, ensuring encrypted password storage and safe user data handling.  
+
+### Goals  
+- Encrypt passwords before saving.  
+- Securely store user details in the database.  
+
+### Why Encrypt Passwords?  
+🔹 **Protect Data** – Safeguards passwords in case of a breach.  
+🔹 **Privacy** – Prevents password visibility.  
+🔹 **Compliance** – Meets GDPR, PCI-DSS security standards.  
+🔹 **Security** – Defends against password theft.  
+
+---
