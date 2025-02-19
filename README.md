@@ -375,3 +375,32 @@ In this milestone, we focused on implementing update functionality for product d
 - **Optimized Form Design:** Enhance the form with file uploads for updating product images and improved field validation.
 
 ---
+
+# Milestone 14: Implementing Product Deletion
+
+In this milestone, we focused on adding the ability to delete products from the database. This feature allows users to remove unwanted products securely and efficiently.
+
+## Backend: Creating a Delete Endpoint
+- Developed a `DELETE` endpoint to remove a product by its ID.
+- Used Mongoose to locate the product in the database and delete it.
+- Added validation to check if the product exists before attempting deletion.
+- Implemented error handling for cases where the product is not found or the server encounters an issue.
+
+## Frontend: Delete Button and Request Handling
+- Added a **Delete** button to each product card for easy removal.
+- Implemented a function to send a `DELETE` request to the backend.
+- Provided feedback with success alerts for successful deletions and error messages for failures.
+- Reloads the page upon successful deletion to reflect changes immediately.
+
+## UI and UX Enhancements
+- Ensured a **responsive design** for the delete button on all screen sizes.
+- Added **confirmation alerts** to prevent accidental deletions.
+- Used **loading indicators** to enhance the user experience.
+
+## Future Enhancements & Experimentation
+- **Admin-Only Access:** Restrict delete functionality to authorized users.
+- **Undo Option:** Implement a temporary recovery period for deleted products.
+- **Batch Deletion:** Allow users to delete multiple products at once for better efficiency.
+
+---
+

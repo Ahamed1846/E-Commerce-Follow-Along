@@ -1,6 +1,3 @@
-// backend/controllers/product.js
-
-
 const express = require('express');
 const Product = require('../model/product');
 const User = require('../model/user');
@@ -215,13 +212,5 @@ router.delete('/delete-product/:id', async (req, res) => {
         res.status(500).json({ error: 'Server error. Could not delete product.' });
     }
 });
-
-
-
-
-
-
-
-
 
 module.exports = router;
