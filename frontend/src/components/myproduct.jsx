@@ -20,6 +20,21 @@ function Myproduct({ _id, name, images, description, price }) {
     const handleEdit = () => {
         navigate(`/create-product/${_id}`);
     };
+    const handleDelete = async () => {
+        try {
+            const response = await axios.delete(
+                `http://localhost:8000/api/v2/product/delete-product/${_id}`
+            );
+            if (response.status === 200) {
+                alert("Product deleted successfully!");
+                window.location.reload();
+            }
+        } catch (err) {
+            console.error("Error deleting product:", err);
+            alert("Failed to delete product.");
+        }
+    };
+
 
     return (
         <div className="bg-neutral-200 p-4 rounded-lg shadow-md flex flex-col justify-between">
@@ -41,6 +56,12 @@ function Myproduct({ _id, name, images, description, price }) {
                     onClick={handleEdit}
                 >
                     Edit
+                </button>
+                <button
+                    onClick={handleDelete}
+                    className="w-full text-white px-4 py-2 rounded-md bg-red-600 hover:bg-red-400 transition duration-300 mt-2"
+                >
+                    Delete
                 </button>
             </div>
         </div>
