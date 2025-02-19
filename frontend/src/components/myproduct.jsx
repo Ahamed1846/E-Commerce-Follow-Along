@@ -1,11 +1,12 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios'
+
 
 function Myproduct({ _id, name, images, description, price }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const navigate = useNavigate();
+
 
     useEffect(() => {
         if (!images || images.length === 0) return;
@@ -15,11 +16,14 @@ function Myproduct({ _id, name, images, description, price }) {
         return () => clearInterval(interval);
     }, [images]);
 
+
     const currentImage = images && images.length > 0 ? images[currentIndex] : null;
+
 
     const handleEdit = () => {
         navigate(`/create-product/${_id}`);
     };
+
     const handleDelete = async () => {
         try {
             const response = await axios.delete(
@@ -27,6 +31,7 @@ function Myproduct({ _id, name, images, description, price }) {
             );
             if (response.status === 200) {
                 alert("Product deleted successfully!");
+                // Reload the page or fetch products again
                 window.location.reload();
             }
         } catch (err) {
@@ -34,6 +39,9 @@ function Myproduct({ _id, name, images, description, price }) {
             alert("Failed to delete product.");
         }
     };
+
+
+
 
 
     return (
@@ -58,14 +66,14 @@ function Myproduct({ _id, name, images, description, price }) {
                     Edit
                 </button>
                 <button
-                    onClick={handleDelete}
-                    className="w-full text-white px-4 py-2 rounded-md bg-red-600 hover:bg-red-400 transition duration-300 mt-2"
-                >
-                    Delete
-                </button>
+    onClick={handleDelete}
+    className="w-full text-white px-4 py-2 rounded-md bg-red-600 hover:bg-red-400 transition duration-300 mt-2">
+    Delete
+</button>
             </div>
         </div>
     );
 }
+
 
 export default Myproduct;
