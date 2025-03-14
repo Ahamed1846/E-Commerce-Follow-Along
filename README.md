@@ -442,3 +442,150 @@ In this milestone, we focused on building a reusable and responsive Nav componen
 - Added a hamburger menu for smaller screens to toggle the navigation links.
 
 ---
+
+# Milestone 16: Product Details Component  
+
+In this milestone, we focused on building a React component to retrieve and display detailed information about a specific product from an API. This enhances the user experience by providing a structured interface to view product details, select quantity, and add the product to the cart.  
+
+### 1. Fetching and Displaying Product Details  
+- Implemented an API call to retrieve product details, including name, description, category, tags, price, and images.  
+- Dynamically displayed product information based on the API response.  
+
+### 2. Quantity Selection  
+- Developed a quantity selector that allows users to increment or decrement the quantity before adding the product to the cart.  
+- Managed selected quantity using React state.  
+
+### 3. Handling Loading and Error States  
+- Displayed appropriate loading messages while fetching data.  
+- Implemented error handling for failed API requests.  
+
+### 4. Image Display  
+- Dynamically rendered product images.  
+- Displayed a placeholder if no image was available.  
+
+### 5. Add to Cart Functionality  
+- Implemented an interactive button to add the selected product and quantity to the cart.  
+- Ensured proper integration with the application's cart state.  
+
+---
+
+# Milestone 17: Product Info Page with Quantity Selection and Add to Cart  
+
+In this milestone, we built a dedicated Product Info Page that allows users to view detailed product information, select quantity, and add items to their cart.  
+
+### 1. Frontend: Product Info Page  
+- Designed a new Product Info Page displaying:  
+  - Product Name  
+  - Product Description  
+  - Product Price  
+  - Product Images  
+- Integrated a quantity selector for users to choose the number of units to add to their cart.  
+- Implemented an "Add to Cart" button to store selected items in the cart.  
+
+### 2. React Router Integration  
+- Used React Router for seamless navigation to the Product Info Page.  
+- Passed the product ID through the URL to fetch and display product details dynamically.  
+
+### 3. State Management and API Integration  
+- Retrieved product details from the backend using the product ID.  
+- Managed quantity selection using React state.  
+- Implemented logic to update the cart state when adding products.  
+
+---
+
+# Milestone 18: Creating an API Endpoint for the Cart Page  
+
+In this milestone, we built a backend endpoint to fetch all products inside a user's cart, enabling users to view their cart contents.  
+
+### 1. Backend: API Integration  
+- Created an API endpoint to retrieve all products stored in a user's cart.  
+- Implemented server-side logic to fetch cart contents from the database.  
+
+### 2. Frontend: Cart Page  
+- Designed a new Cart Page component to display cart items.  
+- Used React Router for smooth navigation to the Cart Page.  
+
+### 3. State Management and API Integration  
+- Retrieved cart data from the backend using the API.  
+- Ensured proper rendering of cart items with updated data.  
+
+---
+
+# Milestone 19: Shopping Cart UI with API Endpoint for Updating Product Quantity  
+
+In this milestone, we implemented the shopping cart UI and API endpoint to allow users to update product quantities in the cart.  
+
+### 1. Frontend: Shopping Cart UI  
+- Designed a Cart component to display cart items along with their quantities.  
+- Implemented a function to update the quantity of products in the cart.  
+- Used React state to manage cart items dynamically.  
+
+### 2. Backend: API Endpoint for Updating Product Quantity  
+- Created an API endpoint to modify product quantities in the cart.  
+- Implemented server-side logic to update cart data in the database.  
+
+### 3. State Management and API Integration  
+- Fetched updated cart data from the backend after modifying product quantities.  
+
+---
+
+# Milestone 20: Building a Profile Page Frontend with User Data Endpoint  
+
+In this milestone, we built the frontend for the profile page, fetching user data from the backend API.  
+
+### 1. Frontend: Profile Page  
+- Designed a new Profile Page component displaying user details.  
+- Implemented a function to retrieve user data from the backend.  
+- Used React state for managing user data.  
+
+### 2. Backend: API Endpoint for User Data  
+- Created an API endpoint to fetch user details.  
+- Implemented server-side logic to retrieve user information from the database.  
+
+### 3. State Management and API Integration  
+- Fetched user data from the backend and updated the UI accordingly.  
+
+---
+
+# Milestone 21: Implementing the Address Form Page  
+
+In this milestone, we built a frontend form for users to enter and manage address details.  
+
+### 1. Frontend Updates: Address Form Page  
+- Designed an input form to collect address details:  
+  - Country  
+  - City  
+  - Address Line 1  
+  - Address Line 2  
+  - ZIP Code  
+  - Address Type (Home/Work/Other)  
+- Implemented form validation to ensure required fields are filled.  
+- Managed form input using React state.  
+
+### 2. Navigation & User Flow  
+- Clicking "Add Address" on the Profile Page redirects to the Address Form.  
+- Implemented smooth navigation to improve user experience.  
+
+### 3. Future Enhancements & Experimentation  
+- **Save Address to Database:** Store the address using a backend API.  
+- **Auto-fill Option:** Allow users to update an existing address instead of entering a new one.  
+- **Google Maps API Integration:** Enable users to select their address using a map.  
+
+---
+
+# Milestone 22: Storing User Address in Database  
+
+In this milestone, we built a backend endpoint to store user address data and updated the user model to support multiple addresses.  
+
+### 1. Backend Updates: Address Storage Endpoint  
+- Created a POST endpoint (`/api/user/address`) to receive address data.  
+- Validated input data before storing it in the database.  
+- Updated the User model to include an address array for multiple addresses.  
+- Implemented error handling to maintain data integrity.  
+
+### 2. Frontend Integration  
+- Updated the Address Form to send a POST request to store addresses.  
+- Managed form input using React state.  
+- Displayed success messages upon successful address submission.  
+
+---
