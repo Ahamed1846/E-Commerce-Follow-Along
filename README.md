@@ -589,3 +589,40 @@ In this milestone, we built a backend endpoint to store user address data and up
 - Displayed success messages upon successful address submission.  
 
 ---
+
+# Milestone 23: Implementing Order Placement and Address Selection  
+
+In this milestone, we added order placement functionality and allowed users to select a delivery address.  
+
+### 1. Frontend Updates: Cart Page & Address Selection  
+- Added a "Place Order" button inside the cart page, navigating to the Select Address Page.  
+- Displayed all saved addresses for the user.  
+- Allowed users to select an address for order delivery.  
+
+### 2. Backend Updates: Order Schema & Storage  
+- Created a Mongoose schema to store order details, including:  
+  - User ID (to associate orders with users)  
+  - Product details (items in the cart)  
+  - Selected delivery address  
+  - Order status (pending, shipped, delivered)  
+  - Total price  
+  - Timestamp  
+- Implemented an endpoint to store orders in the database.  
+
+---
+
+# Milestone 24: Order Confirmation & Placement  
+
+In this milestone, we finalized the order placement process, fetching the selected shipping address and cart items to confirm orders.  
+
+### 1. Frontend Updates: Order Confirmation Page  
+- Displayed the selected address and cart items.  
+- Showed the total price and payment method.  
+- Implemented the "Place Order" button to confirm orders.  
+
+### 2. Backend Updates: Order Processing  
+- Fetched user addresses and cart items via API.  
+- Sent order details (email, address, cart items) to the backend.  
+- Handled loading and error states for a smooth user experience.  
+
+---
