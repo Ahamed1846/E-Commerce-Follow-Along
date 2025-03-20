@@ -626,3 +626,47 @@ In this milestone, we finalized the order placement process, fetching the select
 - Handled loading and error states for a smooth user experience.  
 
 ---
+
+# Milestone 25: Order Placement & Address Selection  
+
+In this milestone, we introduced the ability to place orders and select a shipping address, ensuring order details are properly stored.  
+
+### 1. Frontend Updates: Address Selection & Order Placement  
+- Added a "Place Order" button to the cart page.  
+- Created an address selection page for users to choose a shipping address.  
+
+### 2. Backend Updates: Order Storage  
+- Stored order details including user ID, product details, selected address, order status, total price, and timestamp.  
+- Implemented an API endpoint to handle order storage.  
+
+---
+
+# Milestone 26: Order API & Confirmation Page  
+
+This milestone focused on integrating order placement functionality and building an order confirmation page.  
+
+### 1. Frontend Updates: Order Confirmation Page  
+- Implemented an order confirmation page displaying order details.  
+- Ensured users select an address before confirming an order.  
+- Fetched and displayed order details post-confirmation.  
+
+### 2. Backend Updates: Order API  
+- Developed an API to place orders and fetch user orders.  
+- Stored necessary details: user ID, product details, address, and total price.  
+- Implemented an API endpoint for order confirmation.  
+
+---
+
+# Milestone 27: My Products & Order Management  
+
+In this milestone, we enabled users to view their purchased products and manage their orders.  
+
+### 1. Frontend Updates: My Products & Order Management  
+- Built a "My Products" page displaying user-specific products in a grid layout.  
+- Implemented loading and error handling for product retrieval.  
+- Integrated "Cancel Order" functionality with the backend API.  
+
+### 2. Backend Updates: Order Management APIs  
+- **My Products API:** Retrieved products based on the user’s email.  
+- **Order API:** Fetched user-specific orders using email.  
+- **Cancel Order API:** Allowed users to update order status to "Cancelled."  
