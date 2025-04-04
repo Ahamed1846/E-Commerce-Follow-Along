@@ -670,3 +670,52 @@ In this milestone, we enabled users to view their purchased products and manage 
 - **My Products API:** Retrieved products based on the user’s email.  
 - **Order API:** Fetched user-specific orders using email.  
 - **Cancel Order API:** Allowed users to update order status to "Cancelled."  
+
+---
+Milestone 29: PayPal Payment Gateway Integration  
+In this milestone, we successfully integrated an online payment system using the PayPal API, ensuring secure and seamless transactions.  
+
+1. **Learning PayPal API**  
+   - Explored PayPal's developer platform to understand API structure and sandbox testing.  
+
+2. **Sandbox Setup**  
+   - Created and configured a PayPal Developer account.  
+   - Set up a sandbox account for safe and effective payment testing.  
+   - Retrieved and securely stored the sandbox account’s User ID and Client ID.  
+
+3. **Order Confirmation Page Enhancement**  
+   - Added payment options: Cash on Delivery (COD) and Online Payment.  
+   - Implemented radio buttons to toggle between payment methods.  
+
+---  
+
+Milestone 30: PayPal Payment Integration & Navigation Enhancements  
+In this milestone, we successfully integrated PayPal for seamless online payments and improved the application's navigation.  
+
+1. **PayPal Integration**  
+   - Configured a sandbox account and installed `react-paypal-js`.  
+   - Implemented PayPal’s API for secure transactions.  
+
+2. **Navigation Component**  
+   - Built a responsive Nav component using React Router.  
+   - Enabled smooth navigation across key pages (Home, My Products, Add Product, Cart).  
+
+3. **Responsive Design**  
+   - Used CSS Flexbox and media queries for adaptability across screen sizes.  
+   - Added a hamburger menu for mobile users.  
+
+---  
+
+Milestone 31: Redux Global State Management  
+In this milestone, we set up Redux Toolkit to manage user email across the application.  
+
+1. **Redux Store Setup**  
+   - Installed `@reduxjs/toolkit` and `react-redux`.  
+   - Created a `store/` folder with `store.js` and `userActions.js`.  
+
+2. **Managing User Email**  
+   - Configured Redux store with a reducer to store user email.  
+   - Created an action `setEmail` to update email state.  
+
+3. **Connecting Redux to App**  
+   - Wrapped `App` with `Provider` in `index.js` to enable global state access.
